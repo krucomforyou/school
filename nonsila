@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ==================== เริ่มส่วน SEO (Search Engine Optimization) ==================== -->
+    <title>โรงเรียนโนนศิลาสว่างวิทย์ (นสว.) อ.ฆ้องชัย จ.กาฬสินธุ์ - Nonsilasawangwit School</title>
+    
+    <!-- Meta Description: คำอธิบายเว็บที่จะไปโชว์ในผลการค้นหาของ Google (สำคัญมาก) -->
+    <meta name="description" content="เว็บไซต์อย่างเป็นทางการของ โรงเรียนโนนศิลาสว่างวิทย์ (นสว.) Nonsilasawangwit School (NSW) ตำบลโนนศิลาเลิง อำเภอฆ้องชัย จังหวัดกาฬสินธุ์ สังกัดสำนักงานเขตพื้นที่การศึกษาประถมศึกษา เขต 2 (สพป.กาฬสินธุ์ เขต 2)">
+    
+    <!-- Meta Keywords: คำค้นหาที่เกี่ยวข้อง (ใส่ไว้เพื่อให้ Bot อ่านง่ายขึ้น) -->
+    <meta name="keywords" content="โรงเรียนโนนศิลาสว่างวิทย์, นสว., Nonsilasawangwit School, NSW, โนนศิลาเลิง, ฆ้องชัย, กาฬสินธุ์, โรงเรียน, สพป.กาฬสินธุ์ เขต 2, สำนักงานเขตพื้นที่การศึกษาประถมศึกษา เขต 2, การศึกษา">
+    
+    <meta name="author" content="โรงเรียนโนนศิลาสว่างวิทย์">
+    <meta name="robots" content="index, follow"> <!-- บอก Google ให้เข้ามาเก็บข้อมูล -->
+
+    <!-- Open Graph Tags (OG Tags): สำหรับแชร์บน Facebook/Line แล้วมีภาพและรายละเอียดขึ้น -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="โรงเรียนโนนศิลาสว่างวิทย์ (นสว.) อ.ฆ้องชัย จ.กาฬสินธุ์">
+    <meta property="og:description" content="เว็บไซต์อย่างเป็นทางการของ โรงเรียนโนนศิลาสว่างวิทย์ (นสว.) สังกัดสำนักงานเขตพื้นที่การศึกษาประถมศึกษา เขต 2 (สพป.กาฬสินธุ์ เขต 2)">
+    <meta property="og:image" content="https://placehold.co/1200x630/1e3a8a/FFFFFF/png?text=Nonsilasawangwit+School">
+    <meta property="og:site_name" content="โรงเรียนโนนศิลาสว่างวิทย์">
+
+    <!-- JSON-LD Structured Data: โครงสร้างข้อมูลเชิงลึกช่วยให้ Google เข้าใจว่าเป็น "โรงเรียน" ชัดเจนขึ้น -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "School",
+      "name": "โรงเรียนโนนศิลาสว่างวิทย์",
+      "alternateName": ["นสว.", "Nonsilasawangwit School", "NSW"],
+      "description": "โรงเรียนโนนศิลาสว่างวิทย์ (นสว.) สังกัดสำนักงานเขตพื้นที่การศึกษาประถมศึกษา เขต 2 (สพป.กาฬสินธุ์ เขต 2)",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ตำบลโนนศิลาเลิง",
+        "addressLocality": "อำเภอฆ้องชัย",
+        "addressRegion": "จังหวัดกาฬสินธุ์",
+        "addressCountry": "TH"
+      }
+    }
+    </script>
+    <!-- ==================== จบส่วน SEO ==================== -->
+
+    <!-- Favicon -->
+    <link id="favicon" rel="icon" type="image/png" href="https://placehold.co/32">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body { font-family: 'Sarabun', sans-serif; background-color: #f0f8ff; background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); }
+        .header-gradient { background: linear-gradient(to right, #1e3a8a, #3b82f6); }
+        .nav-item:hover { background-color: rgba(255,255,255,0.2); }
+        .sidebar-header { background: linear-gradient(to right, #1e40af, #3b82f6); color: white; padding: 10px; border-radius: 5px 5px 0 0; font-weight: bold; }
+        .banner-link { transition: transform 0.2s; }
+        .banner-link:hover { transform: scale(1.02); }
+        
+        /* Modal Transitions */
+        .modal { transition: opacity 0.3s ease-in-out, visibility 0.3s; opacity: 0; visibility: hidden; pointer-events: none; }
+        .modal.active { opacity: 1; visibility: visible; pointer-events: auto; }
+        .modal-content { transform: scale(0.95); transition: transform 0.3s ease-in-out; }
+        .modal.active .modal-content { transform: scale(1); }
+        
+        /* Animation for Page Switching */
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Loader */
+        .loader { border: 3px solid #f3f3f3; border-top: 3px solid #1e3a8a; border-radius: 50%; width: 24px; height: 24px; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        
+        .gallery-thumb.active { border-color: #3b82f6; opacity: 1; transform: scale(1.05); }
+
+        /* SweetAlert Custom Font */
+        .swal2-popup { font-family: 'Sarabun', sans-serif !important; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="relative h-64 md:h-96 overflow-hidden shadow-lg border-b-4 border-yellow-400">
+        <div id="mainHeaderBg" class="absolute inset-0 bg-blue-900 bg-[url('https://placehold.co/1200x400/1e3a8a/FFFFFF/png?text=School+Building')] bg-cover bg-center transition-all duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 h-full flex items-center relative z-10 pt-10 md:pt-0">
+            <div class="flex flex-col md:flex-row items-center gap-6 text-center md:text-left w-full">
+                <img id="headerLogo" src="https://placehold.co/150x150/ffffff/1e3a8a?text=NSW" class="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-xl bg-white p-1 object-contain" alt="โลโก้โรงเรียนโนนศิลาสว่างวิทย์">
+                <div class="text-white drop-shadow-md">
+                    <!-- แก้ไขข้อความตั้งต้นเพื่อให้ Google Bot อ่านก่อน JS ทำงาน -->
+                    <h1 id="headerTitle" class="text-3xl md:text-5xl font-bold tracking-wide">โรงเรียนโนนศิลาสว่างวิทย์</h1>
+                    <p id="headerSubtitle" class="text-lg md:text-2xl font-light mt-1">สำนักงานเขตพื้นที่การศึกษาประถมศึกษา เขต 2 (สพป.กาฬสินธุ์ เขต 2)</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="bg-blue-900 text-white sticky top-0 z-40 shadow-lg border-b-2 border-blue-700 relative">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-12">
+                <!-- Hamburger Button (Mobile) -->
+                <button class="md:hidden text-white focus:outline-none flex items-center hover:text-yellow-400 transition" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl mr-2"></i> เมนู
+                </button>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-1 h-full text-sm lg:text-base">
+                    <li><a href="javascript:void(0)" onclick="showPage('home')" class="nav-item px-4 h-full flex items-center bg-blue-800"><i class="fas fa-home mr-2"></i>หน้าแรก</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('personnel')" class="nav-item px-4 h-full flex items-center"><i class="fas fa-users mr-2"></i>ข้อมูลบุคลากร</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('all-news')" class="nav-item px-4 h-full flex items-center"><i class="fas fa-bullhorn mr-2"></i>ข่าวประชาสัมพันธ์</a></li>
+                    <li><a href="javascript:void(0)" class="nav-item px-4 h-full flex items-center"><i class="fas fa-images mr-2"></i>ภาพกิจกรรม</a></li>
+                    <li><a href="javascript:void(0)" class="nav-item px-4 h-full flex items-center"><i class="fas fa-comments mr-2"></i>ถาม-ตอบ</a></li>
+                    <li><a href="javascript:void(0)" class="nav-item px-4 h-full flex items-center"><i class="fas fa-book mr-2"></i>สมุดเยี่ยม</a></li>
+                    <li><a href="javascript:void(0)" class="nav-item px-4 h-full flex items-center"><i class="fas fa-envelope mr-2"></i>ติดต่อเรา</a></li>
+                </ul>
+                
+                <!-- Admin Toggle -->
+                <button id="btnAdminPanel" onclick="openAdminModal()" class="hidden bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-xs font-bold shadow animate-pulse">
+                    <i class="fas fa-cog"></i> จัดการระบบ
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-blue-800 absolute w-full shadow-xl border-b-2 border-yellow-400 z-50">
+            <a href="javascript:void(0)" onclick="showPage('home')" class="block py-3 px-6 border-b border-blue-700 hover:bg-blue-700 transition"><i class="fas fa-home mr-3 w-5 text-center"></i> หน้าแรก</a>
+            <a href="javascript:void(0)" onclick="showPage('personnel')" class="block py-3 px-6 border-b border-blue-700 hover:bg-blue-700 transition"><i class="fas fa-users mr-3 w-5 text-center"></i> ข้อมูลบุคลากร</a>
+            <a href="javascript:void(0)" onclick="showPage('all-news')" class="block py-3 px-6 border-b border-blue-700 hover:bg-blue-700 transition"><i class="fas fa-bullhorn mr-3 w-5 text-center"></i> ข่าวประชาสัมพันธ์</a>
+            <a href="javascript:void(0)" class="block py-3 px-6 border-b border-blue-700 hover:bg-blue-700 transition"><i class="fas fa-images mr-3 w-5 text-center"></i> ภาพกิจกรรม</a>
+            <a href="javascript:void(0)" class="block py-3 px-6 border-b border-blue-700 hover:bg-blue-700 transition"><i class="fas fa-comments mr-3 w-5 text-center"></i> ถาม-ตอบ</a>
+            <a href="javascript:void(0)" class="block py-3 px-6 border-b border-blue-700 hover:bg-blue-700 transition"><i class="fas fa-book mr-3 w-5 text-center"></i> สมุดเยี่ยม</a>
+            <a href="javascript:void(0)" class="block py-3 px-6 hover:bg-blue-700 transition"><i class="fas fa-envelope mr-3 w-5 text-center"></i> ติดต่อเรา</a>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="flex-grow container mx-auto px-4 py-6 relative z-0">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- MOBILE ONLY: School Info Menu (แสดงด้านบนสุดบนมือถือ) -->
+            <aside class="lg:hidden order-1">
+                <div class="bg-white rounded shadow-sm border border-gray-200">
+                    <div class="sidebar-header"><i class="fas fa-university mr-2"></i> ข้อมูลโรงเรียน</div>
+                    <ul class="divide-y divide-gray-100 text-sm">
+                        <li><a href="javascript:void(0)" onclick="showPage('school-info')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> ข้อมูลพื้นฐาน</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('school-symbol')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> สัญลักษณ์ประจำโรงเรียน</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('vision-philosophy')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> วิสัยทัศน์ / ปรัชญา</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('slogan-mission')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> อัตลักษณ์ / คำขวัญ</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('building-info')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> ข้อมูลอาคารสถานที่</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- CENTER CONTENT AREA -->
+            <section class="lg:col-span-6 space-y-6 order-2 lg:order-2">
+                
+                <!-- CONTENT PAGE: HOME (Banner + News) -->
+                <div id="content-home" class="space-y-6 fade-in">
+                    <!-- Banner Slider -->
+                    <div class="rounded-lg overflow-hidden shadow-lg border-4 border-white relative group bg-white">
+                        <img id="mainBannerImage" src="https://placehold.co/800x350/e0f2fe/1e3a8a?text=Welcome+to+Our+School" class="w-full transition duration-500 group-hover:scale-105 object-cover min-h-[200px]" onerror="this.src='https://placehold.co/800x350?text=Error'" alt="ภาพแบนเนอร์โรงเรียนโนนศิลาสว่างวิทย์">
+                    </div>
+
+                    <!-- News Area -->
+                    <div>
+                        <div class="flex items-center justify-between border-b-2 border-blue-500 mb-4 pb-2">
+                            <h2 class="text-xl font-bold text-blue-900"><i class="fas fa-newspaper text-yellow-500 mr-2"></i> ข่าวประชาสัมพันธ์</h2>
+                            <a href="javascript:void(0)" onclick="showPage('all-news')" class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded hover:bg-blue-200">ดูทั้งหมด >></a>
+                        </div>
+
+                        <!-- Grid Layout for News (Home Limit) -->
+                        <div id="newsContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="col-span-full text-center py-10 text-gray-400"><div class="loader mx-auto mb-2"></div> กำลังโหลดข้อมูล...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENT PAGE: ALL NEWS -->
+                <div id="content-all-news" class="hidden bg-white rounded-lg shadow-md p-6 border-t-4 border-blue-600 fade-in">
+                    <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b pb-4 flex items-center justify-between">
+                        <div class="flex items-center"><div class="bg-blue-100 p-2 rounded-full mr-3"><i class="fas fa-bullhorn text-blue-600"></i></div> ข่าวประชาสัมพันธ์ทั้งหมด</div>
+                        <button onclick="showPage('home')" class="text-sm text-gray-500 hover:text-blue-600"><i class="fas fa-arrow-left mr-1"></i> กลับหน้าแรก</button>
+                    </h2>
+                    
+                    <div id="allNewsContainer" class="space-y-4">
+                        <!-- Content will be rendered by JS -->
+                    </div>
+                    
+                    <!-- Pagination Controls -->
+                    <div id="newsPagination" class="flex justify-center gap-2 mt-8"></div>
+                </div>
+
+                <!-- CONTENT PAGE: SCHOOL INFO -->
+                <div id="content-school-info" class="hidden bg-white rounded-lg shadow-md p-6 border-t-4 border-yellow-400 fade-in">
+                    <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b pb-4 flex items-center">
+                        <div class="bg-blue-100 p-2 rounded-full mr-3"><i class="fas fa-school text-blue-600"></i></div>
+                        ข้อมูลพื้นฐานโรงเรียน
+                    </h2>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm md:text-base text-left text-gray-700">
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 w-1/3 md:w-2/5 bg-gray-50 rounded-l-lg">รหัสโรงเรียน (10 หลัก)</th><td class="py-4 px-4 font-mono font-medium">1046030572</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">รหัสโรงเรียน (8 หลัก)</th><td class="py-4 px-4 font-mono font-medium">46020178</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">รหัสโรงเรียน (6 หลัก)</th><td class="py-4 px-4 font-mono font-medium">030572</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">ที่ตั้งโรงเรียน</th><td class="py-4 px-4">หมู่ที่ 1 บ้านโนนศิลาเลิง</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">ตำบล</th><td class="py-4 px-4">โนนศิลาเลิง</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">อำเภอ</th><td class="py-4 px-4">ฆ้องชัย</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">จังหวัด</th><td class="py-4 px-4">กาฬสินธุ์</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">เนื้อที่</th><td class="py-4 px-4">10 ไร่ 95 ตารางวา</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">ห่างจากอำเภอ</th><td class="py-4 px-4">11 กิโลเมตร</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">ห่างจากสำนักงานเขต</th><td class="py-4 px-4">60 กิโลเมตร</td></tr>
+                                <tr class="hover:bg-blue-50/50 transition"><th class="py-4 px-4 font-semibold text-blue-800 bg-gray-50 rounded-l-lg">เครือข่ายโรงเรียน</th><td class="py-4 px-4">ศูนย์เครือข่ายพัฒนาคุณภาพการศึกษาฆ้องชัย</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- CONTENT PAGE: SCHOOL SYMBOL -->
+                <div id="content-school-symbol" class="hidden bg-white rounded-lg shadow-md p-10 border-t-4 border-yellow-400 fade-in text-center flex flex-col items-center justify-center min-h-[400px]">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-8 border-b-2 border-blue-100 pb-2 px-8 inline-block">สัญลักษณ์ประจำโรงเรียน</h2>
+                    
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-yellow-400 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                        <img id="symbolPageLogo" src="https://placehold.co/300x300/1e3a8a/ffffff?text=NSW" class="relative w-64 h-64 md:w-80 md:h-80 object-contain drop-shadow-xl mb-6 transition transform hover:scale-105 duration-500 bg-white rounded-full p-2">
+                    </div>
+                    
+                    <p class="text-gray-600 text-xl font-medium mt-4">ตราประจำโรงเรียนโนนศิลาสว่างวิทย์</p>
+
+                    <!-- สีประจำโรงเรียน -->
+                    <div class="mt-12 w-full max-w-2xl mx-auto flex flex-col items-center">
+                        <div class="inline-flex items-center justify-center bg-blue-50 px-6 py-2 rounded-full mb-8 border border-blue-100 shadow-sm">
+                            <i class="fas fa-flag text-blue-600 mr-2 text-lg"></i>
+                            <h3 class="text-xl font-bold text-blue-900">สีประจำโรงเรียน</h3>
+                        </div>
+                        
+                        <!-- รูปแบบธง -->
+                        <div class="relative w-64 md:w-80 h-40 md:h-48 rounded-xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1),_0_8px_10px_-6px_rgba(0,0,0,0.1)] overflow-hidden border-4 border-white transform transition duration-500 hover:scale-105 group cursor-default">
+                            <!-- ครึ่งบน (สีเหลือง) -->
+                            <div class="w-full h-1/2 bg-[#fbb034] relative">
+                                <!-- แสงเงาบางๆ ให้ดูมีมิติ -->
+                                <div class="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent"></div>
+                            </div>
+                            <!-- ครึ่งล่าง (สีเขียว) -->
+                            <div class="w-full h-1/2 bg-[#00853f] relative">
+                                <!-- แสงเงาบางๆ ให้ดูมีมิติ -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                        </div>
+
+                        <!-- คำอธิบายสี -->
+                        <div class="mt-8 flex items-center justify-center gap-4 sm:gap-6 bg-white px-6 sm:px-8 py-3 rounded-full shadow-md border border-gray-100">
+                             <div class="flex items-center gap-3">
+                                 <div class="w-6 h-6 rounded-full bg-[#fbb034] shadow-inner border-2 border-white ring-1 ring-gray-200"></div>
+                                 <span class="font-bold text-gray-800 text-lg sm:text-xl">สีเหลือง</span>
+                             </div>
+                             <div class="w-1.5 h-1.5 rounded-full bg-gray-300"></div>
+                             <div class="flex items-center gap-3">
+                                 <div class="w-6 h-6 rounded-full bg-[#00853f] shadow-inner border-2 border-white ring-1 ring-gray-200"></div>
+                                 <span class="font-bold text-gray-800 text-lg sm:text-xl">สีเขียว</span>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CONTENT PAGE: VISION & PHILOSOPHY -->
+                <div id="content-vision-philosophy" class="hidden bg-white rounded-lg shadow-md p-8 border-t-4 border-yellow-400 fade-in">
+                    <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b pb-4 flex items-center">
+                        <div class="bg-blue-100 p-2 rounded-full mr-3"><i class="fas fa-eye text-blue-600"></i></div>
+                        วิสัยทัศน์ / ปรัชญา
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-blue-50/50 p-6 rounded-lg border-l-4 border-blue-500 shadow-sm hover:shadow-md transition">
+                            <h3 class="text-xl font-bold text-blue-800 mb-3"><i class="fas fa-bullseye mr-2"></i> วิสัยทัศน์ (Vision)</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed pl-6">
+                                "โรงเรียนโนนศิลาสว่างวิทย์ มุ่งเน้นพัฒนาผู้เรียนให้มีความรู้ คู่คุณธรรม ก้าวทันเทคโนโลยี สุขภาพดี บนพื้นฐานความพอเพียง"
+                            </p>
+                        </div>
+                        
+                        <div class="bg-yellow-50/50 p-6 rounded-lg border-l-4 border-yellow-400 shadow-sm hover:shadow-md transition">
+                            <h3 class="text-xl font-bold text-yellow-700 mb-3"><i class="fas fa-lightbulb mr-2"></i> ปรัชญา (Philosophy)</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed pl-6 italic">
+                                "ปญฺญา นรานํง รตนํ (ปัญญาเป็นรัตนของนรชน)"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CONTENT PAGE: SLOGAN & MISSION -->
+                <div id="content-slogan-mission" class="hidden bg-white rounded-lg shadow-md p-8 border-t-4 border-yellow-400 fade-in">
+                    <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b pb-4 flex items-center">
+                        <div class="bg-blue-100 p-2 rounded-full mr-3"><i class="fas fa-flag text-blue-600"></i></div>
+                        อัตลักษณ์ / คำขวัญ
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-green-50/50 p-6 rounded-lg border-l-4 border-green-500 shadow-sm hover:shadow-md transition">
+                            <h3 class="text-xl font-bold text-green-800 mb-3"><i class="fas fa-comment-dots mr-2"></i> อัตลักษณ์ (Identity)</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed pl-6 font-medium">
+                                "ประพฤติดี มีความสะอาด ฉลาดรอบรู้"
+                            </p>
+                        </div>
+                        
+                        <div class="bg-purple-50/50 p-6 rounded-lg border-l-4 border-purple-500 shadow-sm hover:shadow-md transition">
+                            <h3 class="text-xl font-bold text-purple-800 mb-3"><i class="fas fa-tasks mr-2"></i> คำขวัญ (Slogan)</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed pl-6">
+                                "วิชากับวินัยต้องไปด้วยกัน"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENT PAGE: PERSONNEL -->
+                <div id="content-personnel" class="hidden bg-white rounded-lg shadow-md p-6 border-t-4 border-yellow-400 fade-in">
+                    <h2 class="text-2xl font-bold text-blue-900 mb-8 border-b pb-4 flex items-center">
+                        <div class="bg-blue-100 p-2 rounded-full mr-3"><i class="fas fa-users text-blue-600"></i></div>
+                        ทำเนียบบุคลากร
+                    </h2>
+                    
+                    <div id="personnelContainer">
+                         <div class="text-center py-10 text-gray-400"><div class="loader mx-auto mb-2"></div> กำลังโหลดข้อมูล...</div>
+                    </div>
+                </div>
+
+                <!-- CONTENT PAGE: BUILDING INFO -->
+                <div id="content-building-info" class="hidden bg-white rounded-lg shadow-md p-8 border-t-4 border-yellow-400 fade-in">
+                    <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b pb-4 flex items-center">
+                        <div class="bg-blue-100 p-2 rounded-full mr-3"><i class="fas fa-building text-blue-600"></i></div>
+                        ข้อมูลอาคารสถานที่
+                    </h2>
+                    
+                    <div id="buildingContainer" class="space-y-8">
+                         <div class="text-center py-10 text-gray-400"><div class="loader mx-auto mb-2"></div> กำลังโหลดข้อมูล...</div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- LEFT SIDEBAR -->
+            <aside class="lg:col-span-3 space-y-6 order-3 lg:order-1">
+                <!-- Director -->
+                <div class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
+                    <div class="sidebar-header bg-gradient-to-r from-blue-400 to-blue-600"><i class="fas fa-user-circle mr-2"></i> ผู้บริหาร</div>
+                    <div class="p-4 text-center">
+                        <img id="directorImg" src="https://ui-avatars.com/api/?name=Director&background=e0e7ff&color=1e3a8a&size=400" class="w-48 h-64 object-cover mx-auto rounded shadow-lg mb-3 bg-gray-100 border-2 border-white" alt="ผู้อำนวยการโรงเรียน">
+                        <h4 id="directorName" class="font-bold text-gray-800 text-base">ชื่อ-สกุล ผู้อำนวยการ</h4>
+                        <p id="directorPosition" class="text-sm text-gray-500">ผู้อำนวยการโรงเรียน</p>
+                    </div>
+                </div>
+
+                <!-- DESKTOP ONLY: School Info Menu -->
+                <div class="hidden lg:block bg-white rounded shadow-sm border border-gray-200">
+                    <div class="sidebar-header"><i class="fas fa-university mr-2"></i> ข้อมูลโรงเรียน</div>
+                    <ul class="divide-y divide-gray-100 text-sm">
+                        <li><a href="javascript:void(0)" onclick="showPage('school-info')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> ข้อมูลพื้นฐาน</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('school-symbol')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> สัญลักษณ์ประจำโรงเรียน</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('vision-philosophy')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> วิสัยทัศน์ / ปรัชญา</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('slogan-mission')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> อัตลักษณ์ / คำขวัญ</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('building-info')" class="block px-4 py-2 hover:bg-blue-50 text-gray-700"><i class="fas fa-caret-right text-blue-500 mr-2"></i> ข้อมูลอาคารสถานที่</a></li>
+                    </ul>
+                </div>
+
+                 <div class="bg-white rounded shadow-sm p-2 border">
+                    <div class="bg-blue-700 text-white text-xs px-2 py-1 rounded mb-2 inline-block"><i class="fab fa-facebook-square"></i> Facebook Page</div>
+                    <div id="facebookPageContainer" class="overflow-hidden bg-gray-100 flex items-center justify-center text-gray-400 text-xs rounded min-h-[130px]">
+                         <!-- Content generated by JS -->
+                         Page Plugin Area
+                    </div>
+                </div>
+            </aside>
+
+            <!-- RIGHT SIDEBAR -->
+            <aside class="lg:col-span-3 space-y-4 order-4 lg:order-3">
+                
+                <!-- LOGIN BOX -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-yellow-400">
+                    <div class="bg-gray-100 px-4 py-2 border-b flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fas fa-lock text-gray-500 mr-2"></i> <span class="text-sm font-bold text-gray-700">สำหรับผู้ดูแลระบบ</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <form id="loginForm" class="space-y-3">
+                            <div>
+                                <input type="text" id="user" placeholder="ชื่อผู้ใช้" class="w-full border rounded px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-gray-50">
+                            </div>
+                            <div>
+                                <input type="password" id="pass" placeholder="รหัสผ่าน" class="w-full border rounded px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-gray-50">
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2 rounded transition shadow">เข้าสู่ระบบ</button>
+                        </form>
+
+                        <div id="userProfile" class="hidden text-center">
+                            <div class="mb-3 relative inline-block">
+                                <img id="userImg" src="" class="w-20 h-20 rounded-full mx-auto border-4 border-blue-50 shadow-md object-cover" alt="โปรไฟล์ผู้ใช้">
+                                <div class="absolute bottom-0 right-0 bg-green-500 w-4 h-4 rounded-full border-2 border-white"></div>
+                            </div>
+                            <div class="font-bold text-gray-800 text-lg leading-tight" id="userName">User</div>
+                            <div class="text-xs text-blue-500 mb-3" id="userRole">Role</div>
+                            
+                            <div class="flex gap-2">
+                                <button onclick="openAdminModal()" class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white text-xs font-bold py-2 rounded"><i class="fas fa-tools"></i> จัดการ</button>
+                                <button onclick="logout()" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700 text-xs font-bold py-2 rounded"><i class="fas fa-sign-out-alt"></i> ออก</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MENU BANNERS -->
+                <div class="space-y-2">
+                    <a href="#" class="banner-link block bg-gradient-to-r from-blue-500 to-blue-600 text-white p-3 rounded shadow flex items-center">
+                        <div class="bg-white/20 p-2 rounded-full mr-3"><i class="fas fa-clock text-xl"></i></div>
+                        <div><div class="font-bold text-sm">ระบบบันทึกเวลาเรียน</div><div class="text-[10px] opacity-80">Check Student Time</div></div>
+                    </a>
+                    <a href="#" class="banner-link block bg-gradient-to-r from-green-500 to-green-600 text-white p-3 rounded shadow flex items-center">
+                        <div class="bg-white/20 p-2 rounded-full mr-3"><i class="fas fa-money-bill-wave text-xl"></i></div>
+                        <div><div class="font-bold text-sm">ชำระเงินบำรุงการศึกษา</div><div class="text-[10px] opacity-80">Payment System</div></div>
+                    </a>
+                    <a href="#" class="banner-link block bg-gradient-to-r from-purple-500 to-purple-600 text-white p-3 rounded shadow flex items-center">
+                        <div class="bg-white/20 p-2 rounded-full mr-3"><i class="fas fa-graduation-cap text-xl"></i></div>
+                        <div><div class="font-bold text-sm">ดูผลการเรียนออนไลน์</div><div class="text-[10px] opacity-80">SGS Online</div></div>
+                    </a>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-900 text-white mt-auto py-8 border-t-8 border-yellow-400">
+        <div class="container mx-auto px-4 text-center">
+            <h3 id="footerTitle" class="font-bold text-lg">โรงเรียนโนนศิลาสว่างวิทย์</h3>
+            <p id="footerSubtitle" class="text-sm opacity-70 mb-4">สำนักงานเขตพื้นที่การศึกษาประถมศึกษา เขต 2 (สพป.กาฬสินธุ์ เขต 2)</p>
+            <p id="footerCopyright" class="text-xs opacity-50">&copy; 2024 Non Sila Sawang Wit School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MOURNING / ANNOUNCEMENT MODAL (POPUP) -->
+    <div id="mourningPopup" class="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 backdrop-blur-sm hidden">
+        <div class="relative max-w-4xl w-full mx-4 animate-[fade-in_0.5s] flex flex-col items-center">
+             <button onclick="closeMourningPopup()" class="absolute -top-12 right-0 text-white text-xl hover:text-gray-300 flex items-center gap-2 bg-black/50 px-4 py-2 rounded-full transition hover:bg-black/70"><i class="fas fa-times"></i> ปิดหน้าต่าง</button>
+            <img id="mourningPopupImg" src="" class="w-full rounded-lg shadow-2xl border-4 border-white max-h-[85vh] object-contain bg-black">
+            <div class="mt-4 bg-black/60 px-4 py-2 rounded-full backdrop-blur-sm">
+                <label class="inline-flex items-center text-white cursor-pointer select-none">
+                    <input type="checkbox" id="dontShowToday" class="w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300">
+                    <span class="ml-3 font-medium text-sm md:text-base">ไม่แสดงอีกในวันนี้</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <!-- BUILDING IMAGE MODAL -->
+    <div id="buildingImageModal" class="fixed inset-0 z-[200] flex items-center justify-center bg-black/95 backdrop-blur-sm hidden" onclick="closeBuildingImageModal()">
+        <div class="relative w-full h-full p-4 flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+             <button onclick="closeBuildingImageModal()" class="absolute top-4 right-4 text-white/70 hover:text-white text-4xl transition z-50"><i class="fas fa-times"></i></button>
+             
+             <img id="buildingPopupImg" src="" class="max-w-full max-h-[85vh] object-contain shadow-2xl rounded-lg">
+             <div id="buildingPopupCaption" class="mt-4 text-white text-xl font-bold bg-black/50 px-6 py-2 rounded-full backdrop-blur-md"></div>
+        </div>
+    </div>
+
+    <!-- NEWS DETAIL MODAL -->
+    <div id="newsDetailModal" class="modal fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm" onclick="closeNewsDetailModal()">
+        <div class="modal-content bg-white w-full max-w-5xl mx-4 rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[90vh]" onclick="event.stopPropagation()">
+            <div class="w-full md:w-3/5 bg-gray-900 flex flex-col justify-center relative group">
+                 <button onclick="closeNewsDetailModal()" class="md:hidden absolute top-4 right-4 text-white z-10 bg-black/50 rounded-full px-2"><i class="fas fa-times"></i></button>
+                 <div class="flex-1 flex items-center justify-center p-4 h-[50vh] md:h-auto bg-black/20 relative">
+                     <img id="detailMainImage" src="" class="max-w-full max-h-full object-contain rounded shadow-lg">
+                     <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition opacity-0 group-hover:opacity-100" onclick="changeImage(-1)"><i class="fas fa-chevron-left text-xl"></i></button>
+                     <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition opacity-0 group-hover:opacity-100" onclick="changeImage(1)"><i class="fas fa-chevron-right text-xl"></i></button>
+                 </div>
+                 <div class="h-20 bg-black/50 p-2 flex gap-2 overflow-x-auto justify-center" id="detailThumbnails"></div>
+            </div>
+            <div class="w-full md:w-2/5 p-6 overflow-y-auto flex flex-col bg-white">
+                <div class="flex justify-between items-start mb-4"><button onclick="closeNewsDetailModal()" class="hidden md:block text-gray-400 hover:text-red-500 text-2xl ml-auto"><i class="fas fa-times"></i></button></div>
+                <h2 id="detailName" class="text-xl md:text-2xl font-bold text-blue-900 mb-2 leading-tight"></h2>
+                <div class="w-12 h-1 bg-yellow-400 mb-2 rounded"></div>
+                <div class="text-sm text-gray-500 mb-4 flex items-center"><i class="far fa-calendar-alt mr-2 text-blue-400"></i><span id="detailDate"></span><span class="mx-2">|</span><span id="detailIssue"></span></div>
+                <div class="prose prose-sm text-gray-700 flex-1 whitespace-pre-wrap" id="detailDesc"></div>
+                <div class="mt-6 pt-4 border-t text-center text-xs text-gray-400">โรงเรียนโนนศิลาสว่างวิทย์</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PERSONNEL DETAIL MODAL -->
+    <div id="personnelDetailModal" class="modal fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm" onclick="closePersonnelDetailModal()">
+        <div class="modal-content bg-white w-full max-w-lg mx-4 rounded-xl shadow-2xl p-0 overflow-hidden relative" onclick="event.stopPropagation()">
+            <button onclick="closePersonnelDetailModal()" class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl z-10"><i class="fas fa-times"></i></button>
+            <div class="bg-gradient-to-r from-blue-900 to-blue-700 h-32 relative">
+                <div class="absolute -bottom-16 left-1/2 transform -translate-x-1/2">
+                     <img id="popupPersonImg" src="" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover bg-white">
+                </div>
+            </div>
+            <div class="pt-20 pb-8 px-6 text-center">
+                <h2 id="popupPersonName" class="text-2xl font-bold text-blue-900 mb-1"></h2>
+                <p id="popupPersonPosition" class="text-blue-600 font-medium mb-4"></p>
+                <div class="space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg border border-gray-200 text-left">
+                     <div class="flex"><span class="font-bold w-24 flex-shrink-0 text-gray-500">วิทยฐานะ:</span> <span id="popupPersonAcademic">-</span></div>
+                     <div class="flex"><span class="font-bold w-24 flex-shrink-0 text-gray-500">กลุ่มสาระฯ:</span> <span id="popupPersonDept">-</span></div>
+                     <div class="flex"><span class="font-bold w-24 flex-shrink-0 text-gray-500">สาขาวิชา:</span> <span id="popupPersonMajor">-</span></div>
+                     <div class="flex"><span class="font-bold w-24 flex-shrink-0 text-gray-500">เบอร์โทร:</span> <span id="popupPersonPhone">-</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN MODAL -->
+    <div id="adminModal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+        <div class="modal-content bg-white w-full max-w-5xl mx-4 rounded-lg shadow-2xl h-[85vh] flex flex-col overflow-hidden">
+            <div class="bg-blue-900 text-white p-4 flex justify-between items-center shadow-md">
+                <h3 class="font-bold text-lg"><i class="fas fa-cogs mr-2"></i> ระบบจัดการหลังบ้าน</h3>
+                <button onclick="closeAdminModal()" class="hover:text-red-300 transition transform hover:rotate-90"><i class="fas fa-times text-2xl"></i></button>
+            </div>
+            <div class="flex flex-1 overflow-hidden">
+                <!-- Sidebar -->
+                <div class="w-16 md:w-56 bg-gray-800 text-gray-300 flex flex-col">
+                    <button onclick="switchAdminTab('newsTab', this)" class="admin-tab active p-4 hover:bg-gray-700 flex items-center gap-3 border-l-4 border-transparent">
+                        <i class="fas fa-newspaper text-xl w-6"></i> <span class="hidden md:inline font-medium">ข่าวสาร</span>
+                    </button>
+                    <button onclick="switchAdminTab('teacherTab', this)" class="admin-tab p-4 hover:bg-gray-700 flex items-center gap-3 border-l-4 border-transparent">
+                        <i class="fas fa-users text-xl w-6"></i> <span class="hidden md:inline font-medium">บุคลากร</span>
+                    </button>
+                    <button onclick="switchAdminTab('buildingsTab', this)" class="admin-tab p-4 hover:bg-gray-700 flex items-center gap-3 border-l-4 border-transparent">
+                        <i class="fas fa-building text-xl w-6"></i> <span class="hidden md:inline font-medium">อาคารสถานที่</span>
+                    </button>
+                    <button onclick="switchAdminTab('settingsTab', this)" class="admin-tab p-4 hover:bg-gray-700 flex items-center gap-3 border-l-4 border-transparent">
+                        <i class="fas fa-cog text-xl w-6"></i> <span class="hidden md:inline font-medium">ตั้งค่าเว็บ</span>
+                    </button>
+                </div>
+
+                <!-- Main Content -->
+                <div class="flex-1 p-6 overflow-y-auto bg-gray-100 relative">
+                    
+                    <!-- NEWS TAB -->
+                    <div id="newsTab" class="admin-content">
+                        <div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
+                            <div>
+                                <h4 class="font-bold text-2xl text-gray-800">จัดการข่าวสาร</h4>
+                                <p class="text-gray-500 text-sm">เพิ่ม ลบ แก้ไข ข่าวประชาสัมพันธ์</p>
+                            </div>
+                            <button onclick="openNewsForm()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2 transition">
+                                <i class="fas fa-plus-circle"></i> เพิ่มข่าวใหม่
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-sm text-left">
+                                    <thead class="bg-gray-50 text-gray-600 border-b">
+                                        <tr>
+                                            <th class="p-4 font-semibold">วันที่</th>
+                                            <th class="p-4 font-semibold">รูปภาพ</th>
+                                            <th class="p-4 font-semibold">หัวข้อข่าว</th>
+                                            <th class="p-4 font-semibold text-center">ฉบับที่</th>
+                                            <th class="p-4 font-semibold text-center">จัดการ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="adminNewsList" class="divide-y divide-gray-100"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TEACHER TAB -->
+                    <div id="teacherTab" class="admin-content hidden">
+                         <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <h4 class="font-bold text-2xl text-gray-800">จัดการบุคลากร</h4>
+                                <p class="text-gray-500 text-sm">เพิ่ม ลบ แก้ไข ข้อมูลครูและบุคลากร</p>
+                            </div>
+                            <button onclick="openTeacherForm()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2 transition">
+                                <i class="fas fa-user-plus"></i> เพิ่มบุคลากร
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-sm text-left">
+                                    <thead class="bg-gray-50 text-gray-600 border-b">
+                                        <tr>
+                                            <th class="p-4 font-semibold">รูปภาพ</th>
+                                            <th class="p-4 font-semibold">ชื่อ-สกุล</th>
+                                            <th class="p-4 font-semibold">ตำแหน่ง</th>
+                                            <th class="p-4 font-semibold">สาขาวิชา/ฝ่าย</th>
+                                            <th class="p-4 font-semibold">เบอร์โทร</th>
+                                            <th class="p-4 font-semibold text-center">จัดการ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="adminTeacherList" class="divide-y divide-gray-100"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BUILDINGS TAB -->
+                    <div id="buildingsTab" class="admin-content hidden">
+                         <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <h4 class="font-bold text-2xl text-gray-800">จัดการอาคารสถานที่</h4>
+                                <p class="text-gray-500 text-sm">เพิ่ม ลบ แก้ไข ข้อมูลอาคารและแผนผัง</p>
+                            </div>
+                            <button onclick="openBuildingForm()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2 transition">
+                                <i class="fas fa-plus-circle"></i> เพิ่มอาคาร
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-sm text-left">
+                                    <thead class="bg-gray-50 text-gray-600 border-b">
+                                        <tr>
+                                            <th class="p-4 font-semibold">รูปภาพ</th>
+                                            <th class="p-4 font-semibold">ชื่ออาคาร</th>
+                                            <th class="p-4 font-semibold">รายละเอียด</th>
+                                            <th class="p-4 font-semibold text-center">จัดการ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="adminBuildingList" class="divide-y divide-gray-100"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SETTINGS TAB -->
+                    <div id="settingsTab" class="admin-content hidden space-y-6">
+                        <h4 class="font-bold text-2xl text-gray-800">ตั้งค่าเว็บไซต์</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Basic Info -->
+                            <div class="bg-white p-6 rounded-xl shadow-sm border space-y-4">
+                                <h5 class="font-bold text-gray-700 border-b pb-2">ข้อมูลทั่วไป</h5>
+                                <div><label class="block text-xs font-bold text-gray-500 mb-1">ชื่อโรงเรียน</label><input type="text" id="editAppTitle" class="w-full border rounded-lg p-2.5 text-sm bg-gray-50 focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                                <div><label class="block text-xs font-bold text-gray-500 mb-1">สังกัด</label><input type="text" id="editAppSubtitle" class="w-full border rounded-lg p-2.5 text-sm bg-gray-50 focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                                <div><label class="block text-xs font-bold text-gray-500 mb-1">ข้อความ Copyright (Footer)</label><input type="text" id="editFooterCopyright" class="w-full border rounded-lg p-2.5 text-sm bg-gray-50 focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                                <div class="mt-4"><label class="block text-xs font-bold text-gray-500 mb-1">URL เพจ Facebook</label><input type="text" id="editFacebookPageUrl" class="w-full border rounded-lg p-2.5 text-sm bg-gray-50 focus:ring-1 focus:ring-blue-500 outline-none" placeholder="https://www.facebook.com/YourPageName"></div>
+                            </div>
+                            <!-- Logo -->
+                            <div class="bg-white p-6 rounded-xl shadow-sm border space-y-4">
+                                <h5 class="font-bold text-gray-700 border-b pb-2">โลโก้โรงเรียน</h5>
+                                <div class="flex items-center gap-4">
+                                    <img id="previewLogo" src="" class="w-20 h-20 rounded-full border shadow-sm bg-gray-100">
+                                    <div class="flex-1">
+                                        <label class="block text-xs font-bold text-gray-500 mb-1">อัปโหลดโลโก้ใหม่</label>
+                                        <input type="file" id="editLogoFile" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" onchange="previewSingleImage(this, 'previewLogo')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Header Image Settings -->
+                        <div class="bg-white p-6 rounded-xl shadow-sm border space-y-4">
+                            <h5 class="font-bold text-gray-700 border-b pb-2">ภาพพื้นหลังส่วนหัว (Header)</h5>
+                            <div class="flex items-center gap-4">
+                                <img id="previewHeader" src="" class="w-32 h-20 object-cover rounded border shadow-sm bg-gray-100">
+                                <div class="flex-1">
+                                    <label class="block text-xs font-bold text-gray-500 mb-1">อัปโหลดภาพใหม่ (แนะนำขนาด 1200x400px)</label>
+                                    <input type="file" id="editHeaderFile" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" onchange="previewSingleImage(this, 'previewHeader')">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mourning Image Settings -->
+                        <div class="bg-white p-6 rounded-xl shadow-sm border space-y-4">
+                             <h5 class="font-bold text-gray-700 border-b pb-2 flex items-center justify-between">
+                                 <span><i class="fas fa-bullhorn text-yellow-500 mr-2"></i> ภาพประกาศ / ไว้อาลัย (Pop-up & Banner)</span>
+                                 <div class="flex items-center gap-2">
+                                     <input type="checkbox" id="editMourningActive" class="w-5 h-5 text-blue-600 rounded focus:ring-blue-500">
+                                     <label for="editMourningActive" class="text-sm font-bold text-gray-600 cursor-pointer">เปิดใช้งาน</label>
+                                 </div>
+                             </h5>
+                             <div class="flex items-start gap-6">
+                                 <div class="w-48 bg-gray-100 rounded border flex items-center justify-center relative min-h-[150px]">
+                                     <img id="previewMourning" src="" class="max-w-full max-h-[200px] object-contain">
+                                     <span class="absolute text-xs text-gray-400 pointer-events-none" id="mourningPlaceholder">ตัวอย่างภาพ</span>
+                                 </div>
+                                 <div class="flex-1 space-y-3">
+                                     <label class="block text-xs font-bold text-gray-500">อัปโหลดรูปภาพใหม่</label>
+                                     <input type="file" id="editMourningFile" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" onchange="previewSingleImage(this, 'previewMourning'); document.getElementById('mourningPlaceholder').style.display='none';">
+                                     <p class="text-xs text-gray-400">* ระบบจะแสดงทั้งแบบ Pop-up (ถ้าไม่ได้ปิดวันนี้) และ Banner หลัก</p>
+                                 </div>
+                             </div>
+                        </div>
+
+                        <button onclick="saveSettings()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2.5 rounded-lg font-bold shadow transition w-full md:w-auto"><i class="fas fa-save mr-2"></i> บันทึกการตั้งค่า</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWS FORM MODAL -->
+    <div id="newsFormModal" class="modal fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm">
+        <div class="modal-content bg-white w-full max-w-lg mx-4 rounded-xl shadow-2xl p-0 overflow-hidden">
+            <div class="bg-gray-50 px-6 py-4 border-b flex justify-between items-center">
+                 <h3 class="font-bold text-lg text-gray-800">จัดการข่าวประชาสัมพันธ์</h3>
+                 <button onclick="closeNewsFormModal()" class="text-gray-400 hover:text-red-500"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="p-6 space-y-4 max-h-[70vh] overflow-y-auto">
+                <form id="newsForm" class="space-y-4">
+                    <input type="hidden" id="newsId">
+                    <div class="flex flex-col items-center">
+                        <div class="w-full border-2 border-dashed border-gray-300 rounded-lg bg-gray-50 p-4 text-center cursor-pointer hover:bg-blue-50 transition relative group" onclick="document.getElementById('newsFiles').click()">
+                            <i class="fas fa-images text-3xl text-blue-400 mb-2 group-hover:scale-110 transition"></i>
+                            <p class="text-sm text-gray-500 font-medium">คลิกเพื่อเพิ่มรูปภาพ (เลือกเพิ่มได้เรื่อยๆ)</p>
+                            <p class="text-xs text-gray-400">รองรับ .jpg, .png</p>
+                        </div>
+                        <input type="file" id="newsFiles" class="hidden" accept="image/*" multiple onchange="handleFileSelect(this)">
+                        <div id="formNewsPreviewGrid" class="grid grid-cols-4 gap-2 w-full mt-3"></div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                         <div><label class="text-xs font-bold text-gray-500">ฉบับที่</label><input type="number" id="newsIssue" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                         <div><label class="text-xs font-bold text-gray-500">ปี พ.ศ.</label><input type="number" id="newsYear" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3">
+                         <div class="col-span-1"><label class="text-xs font-bold text-gray-500">วันที่</label><select id="newsDay" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></select></div>
+                         <div class="col-span-2"><label class="text-xs font-bold text-gray-500">เดือน</label><select id="newsMonth" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></select></div>
+                    </div>
+                    <div><label class="text-xs font-bold text-gray-500">หัวข้อข่าว</label><input type="text" id="newsTitle" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none font-bold" placeholder="เช่น กิจกรรมวันไหว้ครู..."></div>
+                    <div><label class="text-xs font-bold text-gray-500">รายละเอียดข่าว</label><textarea id="newsDetail" rows="4" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none" placeholder="รายละเอียดเนื้อหาข่าว..."></textarea></div>
+                </form>
+            </div>
+            <div class="bg-gray-50 px-6 py-4 border-t flex justify-end gap-3">
+                <button onclick="closeNewsFormModal()" class="px-4 py-2 text-gray-600 text-sm font-medium hover:bg-gray-200 rounded-lg transition">ยกเลิก</button>
+                <button onclick="submitNews()" class="px-6 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg shadow hover:bg-blue-700 transition transform hover:-translate-y-0.5">บันทึกข้อมูล</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEACHER FORM MODAL -->
+    <div id="teacherFormModal" class="modal fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm">
+        <div class="modal-content bg-white w-full max-w-lg mx-4 rounded-xl shadow-2xl p-0 overflow-hidden">
+            <div class="bg-gray-50 px-6 py-4 border-b flex justify-between items-center">
+                 <h3 class="font-bold text-lg text-gray-800">จัดการข้อมูลบุคลากร</h3>
+                 <button onclick="closeTeacherFormModal()" class="text-gray-400 hover:text-red-500"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="p-6 space-y-4 max-h-[70vh] overflow-y-auto">
+                <form id="teacherForm" class="space-y-4">
+                    <input type="hidden" id="teacherId">
+                    <div class="flex items-center gap-4">
+                        <div class="w-24 h-32 bg-gray-100 rounded border flex-shrink-0 overflow-hidden relative group cursor-pointer" onclick="document.getElementById('teacherFile').click()">
+                            <img id="formTeacherPreview" src="https://placehold.co/100x130?text=No+Img" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition"><i class="fas fa-camera"></i></div>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm font-bold text-gray-700">รูปประจำตัว</p>
+                            <p class="text-xs text-gray-500 mb-2">ขนาดแนะนำ 3x4 ซม. หรือสัดส่วนใกล้เคียง</p>
+                            <input type="file" id="teacherFile" class="text-xs w-full file:mr-2 file:py-1 file:px-2 file:rounded-full file:border-0 file:text-xs file:bg-blue-50 file:text-blue-700" accept="image/*" onchange="previewSingleImage(this, 'formTeacherPreview')">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div><label class="text-xs font-bold text-gray-500">ชื่อ-นามสกุล</label><input type="text" id="teacherName" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                        <div><label class="text-xs font-bold text-gray-500">ตำแหน่ง</label><input type="text" id="teacherPosition" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div><label class="text-xs font-bold text-gray-500">สาขาวิชา (ถ้ามี)</label><input type="text" id="teacherMajor" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                        <div><label class="text-xs font-bold text-gray-500">วิทยฐานะ</label><input type="text" id="teacherAcademic" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div><label class="text-xs font-bold text-gray-500">ฝ่าย/กลุ่มสาระฯ</label><input type="text" id="teacherDept" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                        <div><label class="text-xs font-bold text-gray-500">เบอร์โทรศัพท์</label><input type="text" id="teacherPhone" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                    </div>
+                    <div class="border-t pt-3 mt-2">
+                        <p class="text-xs font-bold text-gray-500 mb-2">ข้อมูลสำหรับเข้าสู่ระบบ (เฉพาะ Admin)</p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div><input type="text" id="teacherUser" placeholder="Username" class="border rounded px-3 py-2 text-sm w-full bg-gray-50 focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                            <div><input type="password" id="teacherPass" placeholder="Password (ว่างไว้หากไม่เปลี่ยน)" class="border rounded px-3 py-2 text-sm w-full bg-gray-50 focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bg-gray-50 px-6 py-4 border-t flex justify-end gap-3">
+                <button onclick="closeTeacherFormModal()" class="px-4 py-2 text-gray-600 text-sm font-medium hover:bg-gray-200 rounded-lg transition">ยกเลิก</button>
+                <button onclick="submitTeacher()" class="px-6 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg shadow hover:bg-blue-700 transition transform hover:-translate-y-0.5">บันทึกข้อมูล</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- BUILDING FORM MODAL -->
+    <div id="buildingFormModal" class="modal fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm">
+        <div class="modal-content bg-white w-full max-w-lg mx-4 rounded-xl shadow-2xl p-0 overflow-hidden">
+            <div class="bg-gray-50 px-6 py-4 border-b flex justify-between items-center">
+                 <h3 class="font-bold text-lg text-gray-800">จัดการข้อมูลอาคารสถานที่</h3>
+                 <button onclick="closeBuildingFormModal()" class="text-gray-400 hover:text-red-500"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="p-6 space-y-4 max-h-[70vh] overflow-y-auto">
+                <form id="buildingForm" class="space-y-4">
+                    <input type="hidden" id="buildingId">
+                    <div class="flex items-center gap-4">
+                        <div class="w-24 h-24 bg-gray-100 rounded border flex-shrink-0 overflow-hidden relative group cursor-pointer" onclick="document.getElementById('buildingFile').click()">
+                            <img id="formBuildingPreview" src="https://placehold.co/150x150?text=No+Img" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition"><i class="fas fa-camera"></i></div>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm font-bold text-gray-700">รูปภาพอาคาร</p>
+                            <input type="file" id="buildingFile" class="text-xs w-full file:mr-2 file:py-1 file:px-2 file:rounded-full file:border-0 file:text-xs file:bg-blue-50 file:text-blue-700" accept="image/*" onchange="previewSingleImage(this, 'formBuildingPreview')">
+                        </div>
+                    </div>
+                    <div><label class="text-xs font-bold text-gray-500">ชื่ออาคาร</label><input type="text" id="buildingName" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></div>
+                    <div><label class="text-xs font-bold text-gray-500">รายละเอียด</label><textarea id="buildingDesc" rows="3" class="border rounded px-3 py-2 text-sm w-full focus:ring-1 focus:ring-blue-500 outline-none"></textarea></div>
+                </form>
+            </div>
+            <div class="bg-gray-50 px-6 py-4 border-t flex justify-end gap-3">
+                <button onclick="closeBuildingFormModal()" class="px-4 py-2 text-gray-600 text-sm font-medium hover:bg-gray-200 rounded-lg transition">ยกเลิก</button>
+                <button onclick="submitBuilding()" class="px-6 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg shadow hover:bg-blue-700 transition transform hover:-translate-y-0.5">บันทึกข้อมูล</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- OVERLAY LOADING & TOAST -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white/90 z-[80] flex flex-col items-center justify-center backdrop-blur-sm hidden"><div class="loader mb-4 w-12 h-12 border-4"></div><p class="text-blue-900 font-bold text-lg animate-pulse">กำลังประมวลผล...</p></div>
+    
+    <div id="toast" class="fixed bottom-5 right-5 bg-gray-800 text-white px-6 py-3 rounded-lg shadow-xl transform translate-y-20 opacity-0 transition-all duration-300 z-[90] flex items-center gap-3"><i class="fas fa-info-circle text-blue-400"></i><span id="toastMsg" class="font-medium text-sm"></span></div>
+
+    <script>
+        const API_URL = 'https://script.google.com/macros/s/AKfycbxIcgvezV9cr9jpyxBxt_SOx4DjNoYH22KpZ7RR5-k23f4rhWKdw00XZLug9NZu0K_0Xg/exec';
+        const THAI_MONTHS = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
+        const DEFAULT_BANNER = 'https://placehold.co/800x350/e0f2fe/1e3a8a?text=Welcome+to+Our+School';
+        
+        let state = { user: null, news: [], settings: {}, teachers: [], buildings: [] };
+        let currentDetailImages = []; 
+        let currentImageIndex = 0; 
+        let uploadQueue = [];
+        let currentServerImages = [];
+        let currentNewsPage = 1;
+        const newsPerPage = 6;
+        let isMourningPopupShownInSession = false; // เพิ่มตัวแปรเช็คการแสดง Popup
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initDropdowns();
+            loadData();
+            const savedUser = localStorage.getItem('nswUser');
+            if(savedUser) { state.user = JSON.parse(savedUser); updateAuthUI(); }
+            document.getElementById('loginForm').onsubmit = async (e) => {
+                e.preventDefault(); showLoading();
+                try {
+                    const res = await fetch(`${API_URL}?action=login&username=${document.getElementById('user').value}&password=${document.getElementById('pass').value}`, { method: 'POST' });
+                    const json = await res.json();
+                    if(json.status === 'success') {
+                        state.user = json.user; localStorage.setItem('nswUser', JSON.stringify(state.user)); updateAuthUI(); 
+                        showToast('ยินดีต้อนรับ ' + state.user.name);
+                    } else { showAlert('ผิดพลาด', json.message, 'error'); }
+                } catch(err) { showAlert('ผิดพลาด', 'เชื่อมต่อล้มเหลว', 'error'); }
+                hideLoading();
+            };
+        });
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function disableBodyScroll() { document.body.classList.add('overflow-hidden'); }
+        function enableBodyScroll() {
+            setTimeout(() => {
+                const modalsActive = document.querySelectorAll('.modal.active').length > 0;
+                const mourningVisible = !document.getElementById('mourningPopup').classList.contains('hidden');
+                const buildingImgVisible = !document.getElementById('buildingImageModal').classList.contains('hidden');
+                const loadingVisible = !document.getElementById('loadingOverlay').classList.contains('hidden');
+                
+                if (!modalsActive && !mourningVisible && !buildingImgVisible && !loadingVisible) {
+                    document.body.classList.remove('overflow-hidden');
+                }
+            }, 10);
+        }
+
+        function closeAdminModal() { document.getElementById('adminModal').classList.remove('active'); enableBodyScroll(); }
+        function closeNewsFormModal() { document.getElementById('newsFormModal').classList.remove('active'); enableBodyScroll(); }
+        function closeTeacherFormModal() { document.getElementById('teacherFormModal').classList.remove('active'); enableBodyScroll(); }
+        function closeBuildingFormModal() { document.getElementById('buildingFormModal').classList.remove('active'); enableBodyScroll(); }
+        function closeNewsDetailModal() { document.getElementById('newsDetailModal').classList.remove('active'); enableBodyScroll(); }
+        function closePersonnelDetailModal() { document.getElementById('personnelDetailModal').classList.remove('active'); enableBodyScroll(); }
+        function closeBuildingImageModal() {
+            document.getElementById('buildingImageModal').classList.add('hidden');
+            enableBodyScroll();
+            setTimeout(() => { document.getElementById('buildingPopupImg').src = ''; }, 300);
+        }
+        function closeMourningPopup() {
+            const checkbox = document.getElementById('dontShowToday');
+            if (checkbox && checkbox.checked) { localStorage.setItem('hideMourningDate', new Date().toDateString()); }
+            document.getElementById('mourningPopup').classList.add('hidden');
+            enableBodyScroll();
+            isMourningPopupShownInSession = true; // บันทึกว่าถูกปิดไปแล้วในรอบการใช้งานนี้
+        }
+
+        async function loadData() {
+            showLoading(); 
+            try {
+                const [newsRes, settingsRes, teachersRes, buildingsRes] = await Promise.all([
+                    fetch(`${API_URL}?action=getNewsletters`),
+                    fetch(`${API_URL}?action=getSettings`),
+                    fetch(`${API_URL}?action=getTeachers`),
+                    fetch(`${API_URL}?action=getBuildings`)
+                ]);
+                state.news = await newsRes.json();
+                state.settings = await settingsRes.json();
+                state.teachers = await teachersRes.json();
+                state.buildings = await buildingsRes.json();
+                renderNews(); renderSettings(); updateBanner(); renderDirector(); renderBuildings();
+                
+                if (state.settings.mourningActive && String(state.settings.mourningActive).toLowerCase() === 'true') {
+                    // เพิ่มเงื่อนไขเช็ค !isMourningPopupShownInSession
+                    if (state.settings.mourningImage && !isMourningPopupShownInSession) {
+                        const today = new Date().toDateString();
+                        const hiddenDate = localStorage.getItem('hideMourningDate');
+                        if (hiddenDate !== today) { 
+                            document.getElementById('mourningPopupImg').src = state.settings.mourningImage;
+                            document.getElementById('mourningPopup').classList.remove('hidden');
+                            disableBodyScroll();
+                            isMourningPopupShownInSession = true; // มาร์คไว้ว่าได้แสดงไปแล้ว
+                        }
+                    }
+                }
+            } catch(e) { 
+                console.error(e); 
+            } finally {
+                hideLoading();
+            }
+        }
+
+        function renderBuildings() {
+            const container = document.getElementById('buildingContainer');
+            container.className = 'space-y-8'; 
+            
+            if (!state.buildings || state.buildings.length === 0) {
+                container.innerHTML = '<div class="text-center py-10 text-gray-400">ยังไม่มีข้อมูลอาคารสถานที่</div>';
+                return;
+            }
+            container.innerHTML = state.buildings.map(b => `
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="relative cursor-pointer group overflow-hidden" onclick="viewBuildingImage('${b.Image || 'https://placehold.co/800x400?text=Building'}', '${b.Name}')">
+                        <img src="${b.Image || 'https://placehold.co/800x400?text=Building'}" class="w-full h-auto object-cover transition duration-700 group-hover:scale-105" alt="ภาพอาคาร ${b.Name}">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition flex items-center justify-center">
+                            <span class="bg-black/50 text-white px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition backdrop-blur-sm"><i class="fas fa-search-plus mr-2"></i> ขยายรูปภาพ</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-2xl text-blue-900 mb-3 border-l-4 border-yellow-400 pl-3">${b.Name}</h4>
+                        <p class="text-gray-600 text-lg leading-relaxed whitespace-pre-line">${b.Description || '-'}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function viewBuildingImage(src, caption) {
+            document.getElementById('buildingPopupImg').src = src;
+            document.getElementById('buildingPopupCaption').innerText = caption || '';
+            document.getElementById('buildingImageModal').classList.remove('hidden');
+            disableBodyScroll(); 
+        }
+
+        function openBuildingForm() {
+            document.getElementById('buildingForm').reset();
+            document.getElementById('buildingId').value = '';
+            document.getElementById('formBuildingPreview').src = 'https://placehold.co/150x150?text=No+Img';
+            document.getElementById('buildingFormModal').classList.add('active');
+            disableBodyScroll(); 
+        }
+
+        function renderAdminBuildingList() {
+            const tbody = document.getElementById('adminBuildingList');
+            if(!state.buildings || !state.buildings.length) { tbody.innerHTML = '<tr><td colspan="4" class="p-4 text-center text-gray-400">ไม่พบข้อมูล</td></tr>'; return; }
+            tbody.innerHTML = state.buildings.map(b => `
+                <tr class="hover:bg-blue-50 border-b transition">
+                    <td class="p-3"><img src="${b.Image || 'https://placehold.co/50?text=Img'}" class="w-16 h-12 object-cover rounded shadow bg-white border"></td>
+                    <td class="p-3 font-bold text-gray-700">${b.Name}</td>
+                    <td class="p-3 text-sm text-gray-600 truncate max-w-[200px]">${b.Description || '-'}</td>
+                    <td class="p-3 text-center">
+                        <div class="flex items-center justify-center gap-2">
+                            <button onclick="editBuilding(${b.ID})" class="bg-blue-100 hover:bg-blue-200 text-blue-700 w-8 h-8 rounded-full flex items-center justify-center transition"><i class="fas fa-edit"></i></button>
+                            <button onclick="deleteBuilding(${b.ID})" class="bg-red-100 hover:bg-red-200 text-red-700 w-8 h-8 rounded-full flex items-center justify-center transition"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function editBuilding(id) {
+            const b = state.buildings.find(x => x.ID == id);
+            if(!b) return;
+            document.getElementById('buildingId').value = b.ID;
+            document.getElementById('buildingName').value = b.Name;
+            document.getElementById('buildingDesc').value = b.Description;
+            document.getElementById('formBuildingPreview').src = b.Image || 'https://placehold.co/150x150?text=No+Img';
+            document.getElementById('buildingFile').value = ''; 
+            document.getElementById('buildingFormModal').classList.add('active');
+            disableBodyScroll();
+        }
+
+        async function submitBuilding() {
+            const id = document.getElementById('buildingId').value;
+            const form = new FormData();
+            form.append('id', id);
+            form.append('name', document.getElementById('buildingName').value);
+            form.append('description', document.getElementById('buildingDesc').value);
+            
+            const file = document.getElementById('buildingFile').files[0];
+            if(file) {
+                 const reader = new FileReader();
+                 reader.readAsDataURL(file);
+                 await new Promise(r => reader.onload = r);
+                 form.append('file', reader.result.split(',')[1]);
+                 form.append('fileName', file.name);
+                 form.append('fileType', file.type);
+            } else {
+                const currentB = state.buildings.find(b => b.ID == id);
+                if(currentB) form.append('currentImageUrl', currentB.Image);
+            }
+
+            sendData('saveBuilding', form, (json) => {
+                closeBuildingFormModal();
+                document.getElementById('buildingFile').value = '';
+                fetch(`${API_URL}?action=getBuildings`).then(r=>r.json()).then(data => {
+                    state.buildings = data;
+                    renderAdminBuildingList();
+                    renderBuildings();
+                });
+            });
+        }
+
+        async function deleteBuilding(id) {
+            showConfirm('คุณแน่ใจหรือไม่?', 'ข้อมูลที่ลบจะไม่สามารถกู้คืนได้', 'warning', () => {
+                const form = new FormData(); form.append('id', id);
+                sendData('deleteBuilding', form, () => { 
+                    fetch(`${API_URL}?action=getBuildings`).then(r=>r.json()).then(data => {
+                        state.buildings = data;
+                        renderAdminBuildingList();
+                        renderBuildings();
+                    });
+                });
+            });
+        }
+
+        function showPage(pageId) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+
+            ['content-home', 'content-school-info', 'content-school-symbol', 'content-vision-philosophy', 'content-slogan-mission', 'content-building-info', 'content-all-news', 'content-personnel'].forEach(id => {
+                const el = document.getElementById(id); if(el) el.classList.add('hidden');
+            });
+            const target = document.getElementById('content-' + pageId);
+            if(target) target.classList.remove('hidden');
+
+            if(pageId === 'all-news') renderAllNewsPage(1);
+            if(pageId === 'personnel') renderPersonnelPage();
+        }
+        
+        function updateBanner() {
+            const bannerImg = document.getElementById('mainBannerImage');
+            const isActive = String(state.settings.mourningActive).toLowerCase() === 'true';
+            const customImg = state.settings.mourningImage;
+            if (isActive && customImg) bannerImg.src = customImg;
+            else bannerImg.src = state.settings.appHeader || DEFAULT_BANNER;
+        }
+
+        function updateAuthUI() {
+            if(state.user) {
+                document.getElementById('loginForm').classList.add('hidden');
+                document.getElementById('userProfile').classList.remove('hidden');
+                document.getElementById('userName').innerText = state.user.name;
+                document.getElementById('userRole').innerText = state.user.position || state.user.role;
+                document.getElementById('userImg').src = state.user.image;
+                document.getElementById('btnAdminPanel').classList.remove('hidden');
+            } else {
+                document.getElementById('loginForm').classList.remove('hidden');
+                document.getElementById('userProfile').classList.add('hidden');
+                document.getElementById('btnAdminPanel').classList.add('hidden');
+            }
+        }
+
+        function logout() {
+            showConfirm('ยืนยันออกจากระบบ?', '', 'question', () => {
+                state.user = null;
+                localStorage.removeItem('nswUser');
+                updateAuthUI();
+                closeAdminModal(); 
+                showToast('ออกจากระบบแล้ว');
+            });
+        }
+
+        function renderNews() {
+            const container = document.getElementById('newsContainer');
+            if(!state.news.length) { container.innerHTML = '<div class="col-span-full py-12 text-center text-gray-400 bg-white rounded-lg border-2 border-dashed"><i class="fas fa-newspaper text-4xl mb-2"></i><br>ยังไม่มีข่าวประชาสัมพันธ์</div>'; return; }
+            container.innerHTML = state.news.slice(0, 4).map((n, index) => {
+                const coverImage = n.Images && n.Images.length > 0 ? n.Images[0] : 'https://placehold.co/400x300?text=No+Image';
+                let issueText = '';
+                if (n.Issue && n.Issue !== '-' && n.Issue.trim() !== '' && n.Issue.trim() !== '0') {
+                    issueText = `ฉบับที่ ${n.Issue} `;
+                }
+                const dateText = `ประจำเดือน ${n.Month || '-'} ปี ${n.Year || '-'}`;
+                const displaySubtitle = issueText + dateText;
+
+                return `<div class="bg-white rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 overflow-hidden flex flex-col h-full group cursor-pointer" onclick="openNewsDetail(${index})">
+                    <div class="relative h-48 overflow-hidden bg-gray-200"><img src="${coverImage}" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/400x300?text=News'"><div class="absolute top-2 right-2 bg-yellow-400 text-blue-900 text-xs font-bold px-2 py-1 rounded shadow"><i class="far fa-calendar-alt"></i> ${formatDate(n.Date)}</div>${n.Images.length > 1 ? '<div class="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded"><i class="fas fa-images"></i> '+n.Images.length+'</div>' : ''}</div>
+                    <div class="p-4 flex-1 flex flex-col"><h3 class="font-bold text-blue-900 text-lg leading-tight mb-2 group-hover:text-blue-600 transition">${n.Title || 'ไม่มีหัวข้อข่าว'}</h3>
+                    <div class="text-xs text-gray-500 mb-3">${displaySubtitle}</div>
+                    <p class="text-sm text-gray-600 line-clamp-2 mb-4 flex-1">${n.Detail || ''}</p><div class="text-xs text-blue-500 font-medium flex items-center mt-auto">อ่านต่อ <i class="fas fa-arrow-right ml-1 transition group-hover:translate-x-1"></i></div></div></div>`;
+            }).join('');
+        }
+
+        function renderAllNewsPage(page) {
+            currentNewsPage = page;
+            const start = (page - 1) * newsPerPage;
+            const end = start + newsPerPage;
+            const paginatedItems = state.news.slice(start, end);
+            const container = document.getElementById('allNewsContainer');
+            
+            if(paginatedItems.length === 0) {
+                container.innerHTML = '<div class="text-center text-gray-400 py-10">ไม่พบข่าวประชาสัมพันธ์</div>';
+                document.getElementById('newsPagination').innerHTML = '';
+                return;
+            }
+
+            container.innerHTML = paginatedItems.map((n, index) => {
+                const absoluteIndex = start + index;
+                const coverImage = n.Images && n.Images.length > 0 ? n.Images[0] : 'https://placehold.co/400x300?text=No+Image';
+                let issueText = '';
+                if (n.Issue && n.Issue !== '-' && n.Issue.trim() !== '' && n.Issue.trim() !== '0') {
+                    issueText = `ฉบับที่ ${n.Issue} `;
+                }
+                const dateText = `ประจำเดือน ${n.Month || '-'} ปี ${n.Year || '-'}`;
+                const displaySubtitle = issueText + dateText;
+
+                return `
+                <div class="flex flex-col md:flex-row bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition cursor-pointer group" onclick="openNewsDetail(${absoluteIndex})">
+                    <div class="w-full md:w-32 h-24 md:h-auto flex-shrink-0 overflow-hidden relative">
+                        <img src="${coverImage}" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded shadow opacity-90">${formatDate(n.Date)}</div>
+                    </div>
+                    <div class="p-4 flex flex-col flex-1 justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-900 mb-2 group-hover:text-blue-600 transition line-clamp-2">${n.Title || 'ไม่มีหัวข้อข่าว'}</h3>
+                            <div class="text-xs text-gray-500 mb-2 flex items-center"><i class="far fa-newspaper mr-2"></i> ${displaySubtitle}</div>
+                            <p class="text-gray-600 text-xs line-clamp-2">${n.Detail || ''}</p>
+                        </div>
+                        <div class="mt-2 text-right">
+                            <span class="text-xs text-blue-500 font-medium group-hover:underline">อ่านรายละเอียด <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(state.news.length / newsPerPage);
+            const paginationContainer = document.getElementById('newsPagination');
+            let html = '';
+
+            if (totalPages > 1) {
+                html += `<button onclick="renderAllNewsPage(${currentNewsPage - 1})" class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 ${currentNewsPage === 1 ? 'opacity-50 cursor-not-allowed pointer-events-none' : ''}"><i class="fas fa-chevron-left"></i></button>`;
+                
+                for (let i = 1; i <= totalPages; i++) {
+                     if (i === 1 || i === totalPages || (i >= currentNewsPage - 1 && i <= currentNewsPage + 1)) {
+                        html += `<button onclick="renderAllNewsPage(${i})" class="w-8 h-8 rounded-full border ${i === currentNewsPage ? 'bg-blue-600 text-white border-blue-600' : 'border-gray-300 hover:bg-gray-100'} flex items-center justify-center text-sm">${i}</button>`;
+                     } else if (i === currentNewsPage - 2 || i === currentNewsPage + 2) {
+                        html += `<span class="w-8 h-8 flex items-center justify-center text-gray-400">...</span>`;
+                     }
+                }
+                html += `<button onclick="renderAllNewsPage(${currentNewsPage + 1})" class="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 ${currentNewsPage === totalPages ? 'opacity-50 cursor-not-allowed pointer-events-none' : ''}"><i class="fas fa-chevron-right"></i></button>`;
+            }
+            
+            paginationContainer.innerHTML = html;
+        }
+
+        function openNewsDetail(index) {
+            const n = state.news[index];
+            if(!n) return;
+            document.getElementById('detailName').innerText = n.Title;
+            document.getElementById('detailDesc').innerText = n.Detail || '-';
+            document.getElementById('detailDate').innerText = formatDate(n.Date);
+            
+            let issueText = '';
+            if (n.Issue && n.Issue !== '-' && n.Issue.trim() !== '' && n.Issue.trim() !== '0') {
+                issueText = `ฉบับที่ ${n.Issue} `;
+            }
+            const dateText = `ประจำเดือน ${n.Month || '-'} ปี ${n.Year || '-'}`;
+            document.getElementById('detailIssue').innerText = issueText + dateText;
+
+            currentDetailImages = n.Images && n.Images.length ? n.Images : ['https://placehold.co/800x600?text=No+Image'];
+            currentImageIndex = 0;
+            setDetailMainImage(currentDetailImages[0]);
+            const thumbsContainer = document.getElementById('detailThumbnails');
+            thumbsContainer.innerHTML = currentDetailImages.map((img, i) => `<img src="${img}" onclick="jumpToImage(${i})" class="gallery-thumb w-16 h-16 object-cover rounded cursor-pointer border-2 border-transparent transition opacity-70 hover:opacity-100 ${i===0?'active':''}">`).join('');
+            
+            document.getElementById('newsDetailModal').classList.add('active');
+            disableBodyScroll(); 
+        }
+        function setDetailMainImage(src) {
+            document.getElementById('detailMainImage').src = src;
+            document.querySelectorAll('.gallery-thumb').forEach((el, i) => { if(i === currentImageIndex) el.classList.add('active'); else el.classList.remove('active'); });
+        }
+        function changeImage(dir) { currentImageIndex += dir; if(currentImageIndex < 0) currentImageIndex = currentDetailImages.length - 1; if(currentImageIndex >= currentDetailImages.length) currentImageIndex = 0; setDetailMainImage(currentDetailImages[currentImageIndex]); }
+        function jumpToImage(idx) { currentImageIndex = idx; setDetailMainImage(currentDetailImages[currentImageIndex]); }
+        
+        function renderDirector() {
+            if (!state.teachers) return;
+            const director = state.teachers.find(t => t.Position && t.Position.includes('ผู้อำนวยการ')) || state.teachers.find(t => t.ID == 1);
+            if (director) {
+                document.getElementById('directorImg').src = director.Image || 'https://ui-avatars.com/api/?name=' + encodeURIComponent(director.Name) + '&background=e0e7ff&color=1e3a8a&size=400';
+                document.getElementById('directorName').innerText = director.Name;
+                document.getElementById('directorPosition').innerText = director.Position || 'ผู้อำนวยการโรงเรียน';
+            }
+        }
+        
+        function renderSettings() {
+            if(state.settings.appTitle) {
+                document.getElementById('editAppTitle').value = state.settings.appTitle;
+                // แก้ไขไม่ให้ทับข้อความที่มีอยู่แล้วใน HTML ตรงๆ ถ้าเป็นไปได้
+                document.getElementById('footerTitle').innerText = state.settings.appTitle;
+            }
+            if(state.settings.appSubtitle) {
+                document.getElementById('editAppSubtitle').value = state.settings.appSubtitle;
+                document.getElementById('headerSubtitle').innerText = state.settings.appSubtitle;
+                document.getElementById('footerSubtitle').innerText = state.settings.appSubtitle; 
+            }
+            if(state.settings.appLogo) {
+                document.getElementById('previewLogo').src = state.settings.appLogo;
+                document.getElementById('headerLogo').src = state.settings.appLogo;
+                const symbolLogo = document.getElementById('symbolPageLogo'); if(symbolLogo) symbolLogo.src = state.settings.appLogo;
+                document.getElementById('favicon').href = state.settings.appLogo;
+            }
+            if (state.settings.appHeader) {
+                document.getElementById('mainHeaderBg').style.backgroundImage = `url('${state.settings.appHeader}')`;
+                document.getElementById('previewHeader').src = state.settings.appHeader;
+            }
+            if(state.settings.mourningImage) {
+                document.getElementById('previewMourning').src = state.settings.mourningImage;
+                document.getElementById('mourningPlaceholder').style.display = 'none';
+            }
+            const active = String(state.settings.mourningActive).toLowerCase() === 'true';
+            document.getElementById('editMourningActive').checked = active;
+
+            const copyrightText = state.settings.appFooterCopyright || '&copy; 2024 Non Sila Sawang Wit School. All rights reserved.';
+            document.getElementById('footerCopyright').innerHTML = copyrightText; 
+            document.getElementById('editFooterCopyright').value = copyrightText;
+
+            const fbUrl = state.settings.facebookPageUrl || '';
+            document.getElementById('editFacebookPageUrl').value = fbUrl;
+            
+            const fbContainer = document.getElementById('facebookPageContainer');
+            if (fbUrl) {
+                fbContainer.innerHTML = `<iframe src="https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(fbUrl)}&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>`;
+                fbContainer.classList.remove('h-32', 'flex', 'items-center', 'justify-center', 'bg-gray-100', 'text-gray-400', 'text-xs'); 
+            } else {
+                fbContainer.innerHTML = 'Page Plugin Area';
+                fbContainer.classList.add('h-32', 'flex', 'items-center', 'justify-center', 'bg-gray-100', 'text-gray-400', 'text-xs');
+            }
+        }
+        
+        function openAdminModal() {
+            document.getElementById('adminModal').classList.add('active');
+            disableBodyScroll(); 
+            renderAdminNewsList();
+            renderSettings();
+            renderAdminTeacherList();
+            renderAdminBuildingList();
+        }
+
+        function openTeacherForm() {
+            document.getElementById('teacherForm').reset();
+            document.getElementById('teacherId').value = '';
+            document.getElementById('formTeacherPreview').src = 'https://placehold.co/100x130?text=No+Img';
+            document.getElementById('teacherFile').value = '';
+            document.getElementById('teacherFormModal').classList.add('active');
+            disableBodyScroll(); 
+        }
+
+        function renderAdminTeacherList() {
+            const tbody = document.getElementById('adminTeacherList');
+            if(!state.teachers || !state.teachers.length) { tbody.innerHTML = '<tr><td colspan="6" class="p-4 text-center text-gray-400">ไม่พบข้อมูลบุคลากร</td></tr>'; return; }
+            tbody.innerHTML = state.teachers.map(t => `<tr class="hover:bg-blue-50 border-b transition"><td class="p-3"><img src="${t.Image || 'https://placehold.co/50?text=User'}" class="w-10 h-10 rounded-full object-cover border bg-gray-100"></td><td class="p-3 font-bold text-gray-700">${t.Name}</td><td class="p-3 text-sm text-gray-600">${t.Position || '-'}</td><td class="p-3 text-sm text-gray-600">${t.Major || '-'} <span class="text-xs text-blue-500 block">${t.Department || '-'}</span></td><td class="p-3 text-sm text-gray-500">${t.Phone || '-'}</td><td class="p-3 text-center"><div class="flex items-center justify-center gap-2"><button onclick="editTeacher(${t.ID})" class="bg-blue-100 hover:bg-blue-200 text-blue-700 w-8 h-8 rounded-full flex items-center justify-center transition"><i class="fas fa-edit"></i></button><button onclick="deleteTeacher(${t.ID})" class="bg-red-100 hover:bg-red-200 text-red-700 w-8 h-8 rounded-full flex items-center justify-center transition"><i class="fas fa-trash"></i></button></div></td></tr>`).join('');
+        }
+
+        function editTeacher(id) {
+            const t = state.teachers.find(x => x.ID == id);
+            if(!t) return;
+            document.getElementById('teacherId').value = t.ID;
+            document.getElementById('teacherName').value = t.Name;
+            document.getElementById('teacherPosition').value = t.Position; 
+            document.getElementById('teacherMajor').value = t.Major;
+            document.getElementById('teacherAcademic').value = t.Academic;
+            document.getElementById('teacherDept').value = t.Department;
+            document.getElementById('teacherPhone').value = t.Phone;
+            document.getElementById('teacherUser').value = t.Username;
+            document.getElementById('teacherPass').value = ''; 
+            document.getElementById('formTeacherPreview').src = t.Image || 'https://placehold.co/100x130?text=No+Img';
+            document.getElementById('teacherFile').value = ''; 
+            document.getElementById('teacherFormModal').classList.add('active');
+            disableBodyScroll(); 
+        }
+
+        async function submitTeacher() {
+            const id = document.getElementById('teacherId').value;
+            const form = new FormData();
+            form.append('id', id);
+            form.append('name', document.getElementById('teacherName').value);
+            form.append('position', document.getElementById('teacherPosition').value); 
+            form.append('major', document.getElementById('teacherMajor').value);
+            form.append('academic', document.getElementById('teacherAcademic').value);
+            form.append('department', document.getElementById('teacherDept').value);
+            form.append('phone', document.getElementById('teacherPhone').value);
+            form.append('username', document.getElementById('teacherUser').value);
+            form.append('password', document.getElementById('teacherPass').value);
+            const file = document.getElementById('teacherFile').files[0];
+            if(file) {
+                 const reader = new FileReader();
+                 reader.readAsDataURL(file);
+                 await new Promise(r => reader.onload = r);
+                 form.append('file', reader.result.split(',')[1]);
+                 form.append('fileName', file.name);
+                 form.append('fileType', file.type);
+            } else {
+                const currentT = state.teachers.find(t => t.ID == id);
+                if(currentT) form.append('currentImageUrl', currentT.Image);
+            }
+            sendData('saveTeacher', form, (json) => {
+                closeTeacherFormModal();
+                document.getElementById('teacherFile').value = ''; 
+                fetch(`${API_URL}?action=getTeachers`).then(r=>r.json()).then(data => {
+                    state.teachers = data;
+                    renderAdminTeacherList();
+                    renderDirector(); 
+                });
+            });
+        }
+
+        async function deleteTeacher(id) {
+            showConfirm('คุณแน่ใจหรือไม่?', 'ข้อมูลที่ลบจะไม่สามารถกู้คืนได้', 'warning', () => {
+                const form = new FormData(); form.append('id', id);
+                sendData('deleteTeacher', form, () => { 
+                    fetch(`${API_URL}?action=getTeachers`).then(r=>r.json()).then(data => {
+                        state.teachers = data;
+                        renderAdminTeacherList();
+                        renderDirector(); 
+                    });
+                });
+            });
+        }
+
+        function renderAdminNewsList() {
+            const tbody = document.getElementById('adminNewsList');
+            if(!state.news.length) { tbody.innerHTML = '<tr><td colspan="5" class="p-4 text-center text-gray-400">ไม่พบข้อมูล</td></tr>'; return; }
+            tbody.innerHTML = state.news.map(n => `<tr class="hover:bg-blue-50 border-b transition"><td class="p-4 whitespace-nowrap text-gray-600">${formatDate(n.Date)}</td><td class="p-4"><div class="relative inline-block"><img src="${n.Images && n.Images[0] ? n.Images[0] : 'https://placehold.co/50?text=NoImg'}" class="w-12 h-16 object-cover rounded shadow bg-white border"></div></td><td class="p-4"><div class="font-bold text-gray-800 text-sm truncate max-w-[200px]">${n.Title}</div><div class="text-xs text-gray-500">${n.Name}</div></td><td class="p-4 text-center"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">${n.Issue || '-'}</span></td><td class="p-4 text-center"><div class="flex items-center justify-center gap-2"><button onclick="editNews(${n.ID})" class="bg-blue-100 hover:bg-blue-200 text-blue-700 w-8 h-8 rounded-full flex items-center justify-center transition"><i class="fas fa-edit"></i></button><button onclick="deleteNews(${n.ID})" class="bg-red-100 hover:bg-red-200 text-red-700 w-8 h-8 rounded-full flex items-center justify-center transition"><i class="fas fa-trash"></i></button></div></td></tr>`).join('');
+        }
+
+        function openNewsForm() {
+            document.getElementById('newsForm').reset();
+            document.getElementById('newsId').value = '';
+            uploadQueue = []; currentServerImages = []; renderPreviewGrid();
+            const d = new Date();
+            document.getElementById('newsDay').value = d.getDate();
+            document.getElementById('newsMonth').value = THAI_MONTHS[d.getMonth()];
+            document.getElementById('newsYear').value = d.getFullYear() + 543;
+            document.getElementById('newsFiles').value = ''; 
+            document.getElementById('newsFormModal').classList.add('active');
+            disableBodyScroll(); 
+        }
+
+        function editNews(id) {
+            const n = state.news.find(x => x.ID == id);
+            if(!n) return;
+            document.getElementById('newsId').value = n.ID;
+            document.getElementById('newsTitle').value = n.Title;
+            document.getElementById('newsDetail').value = n.Detail || '';
+            
+            if(n.Issue && n.Issue !== '-') document.getElementById('newsIssue').value = n.Issue;
+            else document.getElementById('newsIssue').value = '';
+
+            if(n.Year && n.Year !== '-') document.getElementById('newsYear').value = n.Year;
+            if(n.Month && n.Month !== '-') document.getElementById('newsMonth').value = n.Month;
+            
+            if ((!n.Year || n.Year === '-') && n.Date) {
+                const parts = n.Date.split('-'); 
+                if(parts.length === 3) {
+                    const yearAD = parseInt(parts[0]);
+                    const monthIdx = parseInt(parts[1]) - 1;
+                    const day = parseInt(parts[2]);
+                    document.getElementById('newsYear').value = yearAD + 543;
+                    document.getElementById('newsMonth').value = THAI_MONTHS[monthIdx];
+                    document.getElementById('newsDay').value = day;
+                }
+            } else if (n.Date) {
+                 const parts = n.Date.split('-');
+                 if(parts.length === 3) document.getElementById('newsDay').value = parseInt(parts[2]);
+            }
+
+            uploadQueue = []; 
+            currentServerImages = (n.Images && n.Images.length) ? [...n.Images] : [];
+            renderPreviewGrid();
+            
+            document.getElementById('newsFiles').value = ''; 
+            document.getElementById('newsFormModal').classList.add('active');
+            disableBodyScroll(); 
+        }
+
+        function handleFileSelect(input) {
+            if (input.files) {
+                const newFiles = Array.from(input.files);
+                uploadQueue = [...uploadQueue, ...newFiles];
+                input.value = '';
+                renderPreviewGrid();
+            }
+        }
+
+        function renderPreviewGrid() {
+            const grid = document.getElementById('formNewsPreviewGrid');
+            grid.innerHTML = '';
+            currentServerImages.forEach((src, index) => {
+                const div = document.createElement('div');
+                div.className = 'relative group';
+                div.innerHTML = `<img src="${src}" class="w-full h-24 object-cover rounded border bg-gray-100"><div class="absolute inset-0 bg-black/40 hidden group-hover:flex items-center justify-center rounded"><button type="button" onclick="removeServerImage(${index})" class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-red-600 transition shadow"><i class="fas fa-times"></i></button></div>`;
+                grid.appendChild(div);
+            });
+            uploadQueue.forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const div = document.createElement('div');
+                    div.className = 'relative group';
+                    div.innerHTML = `<img src="${e.target.result}" class="w-full h-24 object-cover rounded border bg-gray-100 ring-2 ring-blue-400"><div class="absolute inset-0 bg-black/40 hidden group-hover:flex items-center justify-center rounded"><button type="button" onclick="removeUploadImage(${index})" class="bg-red-500 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-red-600 transition shadow"><i class="fas fa-times"></i></button></div><span class="absolute top-1 left-1 bg-blue-500 text-white text-[10px] px-1 rounded shadow">ใหม่</span>`;
+                    grid.appendChild(div);
+                }
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function removeServerImage(index) {
+            showConfirm('ต้องการลบรูปภาพเดิมนี้หรือไม่?', 'จะมีผลเมื่อกดบันทึก', 'question', () => {
+                currentServerImages.splice(index, 1); 
+                renderPreviewGrid();
+            });
+        }
+
+        function removeUploadImage(index) { uploadQueue.splice(index, 1); renderPreviewGrid(); }
+
+        function previewSingleImage(input, imgId) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) { document.getElementById(imgId).src = e.target.result; }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        async function submitNews() {
+            const id = document.getElementById('newsId').value;
+            const issue = document.getElementById('newsIssue').value;
+            const year = document.getElementById('newsYear').value;
+            if(!year) { showAlert('ข้อผิดพลาด', 'กรุณาระบุปี พ.ศ.', 'warning'); return; }
+
+            const form = new FormData();
+            form.append('newsletterId', id);
+            form.append('issue', issue);
+            form.append('day', document.getElementById('newsDay').value);
+            form.append('month', document.getElementById('newsMonth').value);
+            form.append('year', year);
+            form.append('newsletterTitle', document.getElementById('newsTitle').value);
+            form.append('newsletterDetail', document.getElementById('newsDetail').value);
+            if(id) { form.append('keptImages', JSON.stringify(currentServerImages)); }
+            if(uploadQueue.length > 0) {
+                 for(let i=0; i<uploadQueue.length; i++) {
+                     const file = uploadQueue[i];
+                     const reader = new FileReader();
+                     reader.readAsDataURL(file);
+                     await new Promise(r => reader.onload = r);
+                     form.append('files', reader.result.split(',')[1]);
+                     form.append('fileNames', file.name);
+                     form.append('fileTypes', file.type);
+                 }
+            }
+            sendData(id ? 'editNewsletter' : 'addNewsletter', form, () => {
+                closeNewsFormModal();
+                document.getElementById('newsFiles').value = ''; 
+                renderAdminNewsList();
+                renderNews();
+            });
+        }
+
+        async function deleteNews(id) {
+            showConfirm('คุณแน่ใจหรือไม่?', 'รายการนี้จะถูกลบถาวร', 'warning', () => {
+                const form = new FormData(); form.append('newsletterId', id);
+                sendData('deleteNewsletter', form, () => { renderAdminNewsList(); renderNews(); });
+            });
+        }
+
+        async function saveSettings() {
+             const form = new FormData();
+             form.append('appTitle', document.getElementById('editAppTitle').value);
+             form.append('appSubtitle', document.getElementById('editAppSubtitle').value);
+             const file = document.getElementById('editLogoFile').files[0];
+             if(file) {
+                 const reader = new FileReader();
+                 reader.readAsDataURL(file);
+                 await new Promise(r => reader.onload = r);
+                 form.append('logoFile', reader.result.split(',')[1]);
+                 form.append('logoFileName', file.name);
+                 form.append('logoFileType', file.type);
+            } else { form.append('currentLogoUrl', state.settings.appLogo); }
+            const headerFile = document.getElementById('editHeaderFile').files[0];
+            if (headerFile) {
+                const reader = new FileReader();
+                reader.readAsDataURL(headerFile);
+                await new Promise(r => reader.onload = r);
+                form.append('headerFile', reader.result.split(',')[1]);
+                form.append('headerFileName', headerFile.name);
+                form.append('headerFileType', headerFile.type);
+            } else { form.append('currentHeaderUrl', state.settings.appHeader || ''); }
+            form.append('mourningActive', document.getElementById('editMourningActive').checked);
+            const mourningFile = document.getElementById('editMourningFile').files[0];
+            if(mourningFile) {
+                const reader = new FileReader();
+                reader.readAsDataURL(mourningFile);
+                await new Promise(r => reader.onload = r);
+                form.append('mourningFile', reader.result.split(',')[1]);
+                form.append('mourningFileName', mourningFile.name);
+                form.append('mourningFileType', mourningFile.type);
+            } else { form.append('currentMourningUrl', state.settings.mourningImage || ''); }
+            
+            form.append('appFooterCopyright', document.getElementById('editFooterCopyright').value);
+            form.append('facebookPageUrl', document.getElementById('editFacebookPageUrl').value);
+
+            sendData('saveSettings', form, (json) => {
+                 state.settings.appTitle = document.getElementById('editAppTitle').value;
+                 state.settings.appSubtitle = document.getElementById('editAppSubtitle').value;
+                 if(json.logoUrl) state.settings.appLogo = json.logoUrl;
+                 if(json.headerUrl) state.settings.appHeader = json.headerUrl;
+                 if(json.mourningUrl) state.settings.mourningImage = json.mourningUrl;
+                 state.settings.mourningActive = document.getElementById('editMourningActive').checked ? 'true' : 'false';
+                 state.settings.appFooterCopyright = document.getElementById('editFooterCopyright').value;
+                 state.settings.facebookPageUrl = document.getElementById('editFacebookPageUrl').value;
+                 
+                 document.getElementById('editLogoFile').value = '';
+                 document.getElementById('editHeaderFile').value = '';
+                 document.getElementById('editMourningFile').value = '';
+
+                 renderSettings();
+                 updateBanner(); 
+            });
+        }
+
+        async function sendData(action, formData, callback) {
+            showLoading();
+            try {
+                const res = await fetch(`${API_URL}?action=${action}`, { method: 'POST', body: formData });
+                const json = await res.json();
+                if(json.status === 'success') { 
+                    showToast('ดำเนินการเสร็จสิ้น');
+                    await loadData(); 
+                    if(callback) callback(json); 
+                } 
+                else { showAlert('เกิดข้อผิดพลาด', json.message, 'error'); } 
+            } catch(e) { showAlert('ข้อผิดพลาด', 'การเชื่อมต่อขัดข้อง กรุณาลองใหม่', 'error'); console.error(e); }
+            hideLoading();
+        }
+
+        function switchAdminTab(tabId, btn) {
+            document.querySelectorAll('.admin-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(tabId).classList.remove('hidden');
+            
+            if(tabId === 'teacherTab') renderAdminTeacherList(); 
+            if(tabId === 'buildingsTab') renderAdminBuildingList();
+
+            document.querySelectorAll('.admin-tab').forEach(el => {
+                el.classList.remove('active', 'bg-gray-700', 'border-blue-500');
+                el.classList.add('border-transparent');
+            });
+            btn.classList.add('active', 'bg-gray-700', 'border-blue-500');
+            btn.classList.remove('border-transparent');
+        }
+
+        function showLoading() { document.getElementById('loadingOverlay').classList.remove('hidden'); disableBodyScroll(); }
+        function hideLoading() { document.getElementById('loadingOverlay').classList.add('hidden'); enableBodyScroll(); }
+        
+        function showAlert(title, text, icon) {
+            Swal.fire({ title: title, text: text, icon: icon, confirmButtonText: 'ตกลง', confirmButtonColor: '#1e3a8a' });
+        }
+
+        function showConfirm(title, text, icon, callback) {
+            Swal.fire({
+                title: title, text: text, icon: icon,
+                showCancelButton: true, confirmButtonColor: '#1e3a8a', cancelButtonColor: '#d33',
+                confirmButtonText: 'ใช่, ดำเนินการ', cancelButtonText: 'ยกเลิก'
+            }).then((result) => { if (result.isConfirmed) { callback(); } });
+        }
+        
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = msg;
+            t.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => t.classList.add('translate-y-20', 'opacity-0'), 3000);
+        }
+
+        function formatDate(d) {
+             if(!d || d === '-') return '';
+             const dateObj = new Date(d);
+             if(isNaN(dateObj)) return d; 
+             return dateObj.toLocaleDateString('th-TH', { day: 'numeric', month: 'short', year: 'numeric' });
+        }
+        
+        function initDropdowns() {
+            const m = document.getElementById('newsMonth');
+            THAI_MONTHS.forEach(x => { const o = document.createElement('option'); o.value=x; o.innerText=x; m.appendChild(o); });
+            const d = document.getElementById('newsDay');
+            for(let i=1;i<=31;i++) { const o = document.createElement('option'); o.value=i; o.innerText=i; d.appendChild(o); }
+        }
+
+        function renderPersonnelPage() {
+            const container = document.getElementById('personnelContainer');
+            const validTeachers = state.teachers.filter(t => t.Name !== 'ผู้ดูแลระบบ' && t.Name !== 'System Admin');
+            let director = validTeachers.find(t => t.Position && t.Position.includes('ผู้อำนวยการ') && !t.Position.includes('รอง'));
+            let staff = validTeachers.filter(t => t !== director);
+
+            let html = '';
+
+            if (director) {
+                html += `
+                <div class="flex justify-center mb-12">
+                    <div class="flex flex-col items-center cursor-pointer group relative" onclick="openPersonnelDetail('${director.ID}')">
+                        <div class="relative w-48 h-64 mb-4 transform transition duration-500 group-hover:-translate-y-2">
+                            <div class="absolute inset-0 bg-blue-200 rounded-lg transform rotate-3 transition group-hover:rotate-6"></div>
+                            <img src="${director.Image || 'https://placehold.co/200x260?text=No+Image'}" class="relative w-full h-full object-cover rounded-lg shadow-xl border-4 border-white z-10 bg-white">
+                        </div>
+                        <div class="text-center relative z-20 mt-2">
+                            <h3 class="font-bold text-xl text-blue-900 leading-tight group-hover:text-blue-700">${director.Name}</h3>
+                            <div class="h-1 w-12 bg-yellow-400 mx-auto my-2 rounded"></div>
+                            <p class="text-blue-600 font-medium bg-blue-50 px-3 py-1 rounded-full text-sm inline-block border border-blue-100">${director.Position}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center mb-10 opacity-50">
+                    <div class="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-lg"></div>
+                </div>
+                `;
+            }
+
+            if (staff.length > 0) {
+                html += '<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 max-w-5xl mx-auto">';
+                staff.forEach(t => {
+                    let extraInfo = '';
+                    if (t.Academic && t.Academic !== '-' && t.Academic.trim() !== '') {
+                        extraInfo = `<p class="text-gray-500 text-xs mt-1 bg-gray-100 px-2 py-0.5 rounded inline-block">${t.Academic}</p>`;
+                    }
+
+                    html += `
+                    <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition cursor-pointer group h-full relative" onclick="openPersonnelDetail('${t.ID}')">
+                         <div class="relative w-32 h-40 mb-4 transform transition duration-500 group-hover:-translate-y-1">
+                            <div class="absolute inset-0 bg-blue-100 rounded-lg transform rotate-2 transition group-hover:rotate-4"></div>
+                            <img src="${t.Image || 'https://placehold.co/150x200?text=No+Image'}" class="relative w-full h-full object-cover rounded-lg shadow-md border-2 border-white z-10 bg-white">
+                         </div>
+                         <div class="flex-1 w-full text-center relative z-20">
+                            <h4 class="font-bold text-lg text-gray-800 mb-1 line-clamp-1 group-hover:text-blue-700 transition">${t.Name}</h4>
+                            <div class="h-0.5 w-8 bg-yellow-400 mx-auto my-2 rounded"></div>
+                            <p class="text-blue-600 text-sm font-medium mb-1 truncate">${t.Position || '-'}</p>
+                            ${extraInfo}
+                         </div>
+                    </div>
+                    `;
+                });
+                html += '</div>';
+            } else {
+                 if(!director) html += '<div class="text-center text-gray-400 py-10">ไม่พบข้อมูลบุคลากร</div>';
+            }
+
+            container.innerHTML = html;
+        }
+
+        function openPersonnelDetail(id) {
+            const p = state.teachers.find(t => String(t.ID) === String(id));
+            if(!p) return;
+
+            document.getElementById('popupPersonImg').src = p.Image || 'https://placehold.co/150x150?text=No+Image';
+            document.getElementById('popupPersonName').innerText = p.Name;
+            document.getElementById('popupPersonPosition').innerText = p.Position || '-';
+            
+            document.getElementById('popupPersonAcademic').innerText = p.Academic || '-';
+            document.getElementById('popupPersonDept').innerText = p.Department || '-';
+            document.getElementById('popupPersonMajor').innerText = p.Major || '-';
+            document.getElementById('popupPersonPhone').innerText = p.Phone || '-';
+
+            document.getElementById('personnelDetailModal').classList.add('active');
+            disableBodyScroll(); 
+        }
+
+    </script>
+</body>
+</html>
